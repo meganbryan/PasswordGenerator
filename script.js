@@ -40,9 +40,13 @@ function generatePassword() {
     }
   }
 
-  if ((!uppers && !lowers && !numbers && !specials) || (passwordLength<8) || (passwordLength>128)) {
-    window.alert ('Error, password could not be generated, please try again')
-    return 'Error, password could not be generated, please try again';
+  if (!uppers && !lowers && !numbers && !specials) {
+    window.alert ('Error, you must include at least one category, please try again.')
+    return 'Password could not be generated.';
+  }
+  else if ((passwordLength<8) || (passwordLength>128)) {
+    window.alert ('Error, password must be between 8 and 128 characters, please try again.')
+    return 'Password could not be generated.';
   }
   else {
     for (var i = 0; i < passwordLength; i++) {
