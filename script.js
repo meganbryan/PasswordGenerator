@@ -5,8 +5,6 @@ var lowerArr =["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
 var numberArr = ["0","1","2","3","4","5","6","7","8","9"];
 var specialArr = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~"];
 
-// Write password to the #password input
-
 function generatePassword() {
   var passwordLength = parseInt(window.prompt('How many characters would you like your password to be? Range: 8-128 characters'));
   var uppers = window.confirm('Would you like your password to contain uppercase letters?');
@@ -62,10 +60,7 @@ function generatePassword() {
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
 }
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
