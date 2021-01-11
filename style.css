@@ -13,8 +13,9 @@ body,
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  font-family: 'Oswald', sans-serif;
+  background-color: blanchedalmond;
+  color: white;
 }
 
 .wrapper {
@@ -31,11 +32,11 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: darkseagreen;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: white;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -46,12 +47,14 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: darkcyan;
   height: 2px;
 }
 
 .card-body {
   min-height: 100px;
+  background-color: darkcyan;
+  color: white;
 }
 
 .card-footer {
@@ -62,7 +65,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: darkcyan;
   height: 2px;
 }
 
@@ -73,9 +76,10 @@ header {
 }
 
 .btn {
+  font-family: 'Oswald', sans-serif;
   border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
+  background-color:gray;
+  border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
@@ -98,6 +102,9 @@ button[disabled] {
 }
 
 #password {
+  font-family: 'Oswald', sans-serif;
+  background: darkcyan;
+  color: white;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -110,10 +117,6 @@ button[disabled] {
   padding-bottom: 85px;
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
   resize: none;
   overflow: hidden;
 }
